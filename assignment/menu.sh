@@ -11,4 +11,30 @@ do
     echo "5. Backup files"
     echo "6. Exit"
     echo ""
-    PS3="Enter your option: "
+    PS3="Enter your option: " option
+    case $option in
+        1)
+            ls
+            read -p "Press Enter to continue";;
+        2)
+            df -h
+            read -p "Press Enter to continue";;
+        3)
+            echo $PATH
+            read -p "Press Enter to continue";;
+        4)
+            history
+            read -p "Press Enter to continue";;
+        5)
+            read -p "Enter directory to backup: " dir
+            mkdir BackupFolder
+            cp -R $dir BackupFolder
+            ls BackupFolder
+            read -p "Press Enter to continue";;
+        6)
+            exit 0;;
+        *)
+            echo "Invalid choice. Press Enter to try again."
+            read;;
+    esac
+done
