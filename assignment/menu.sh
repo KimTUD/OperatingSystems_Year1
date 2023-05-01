@@ -11,26 +11,21 @@ do
     echo "5. Backup files"
     echo "6. Exit"
     echo ""
-    PS3="Enter your option: " option
+    read -p "Enter your option: " option
     case $option in
         1)
-            ls
-            read -p "Press Enter to continue";;
+            ls;;
         2)
-            df -h
-            read -p "Press Enter to continue";;
+            df -h;;
         3)
-            echo $PATH
-            read -p "Press Enter to continue";;
+            echo $PATH;;
         4)
-            history
-            read -p "Press Enter to continue";;
+            history;;
         5)
             read -p "Enter directory to backup: " dir
             mkdir BackupFolder
             cp -R $dir BackupFolder
-            ls BackupFolder
-            read -p "Press Enter to continue";;
+            ls BackupFolder;;
         6)
             exit 0;;
         *)
