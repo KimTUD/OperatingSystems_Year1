@@ -23,6 +23,7 @@ do
 		   echo "Backup created:"
 		   ls BackupFolder ;;
 		6) exit ;;
-		*) echo "Invalid choice";;
+		*) echo "Invalid choice. Press enter to try again."
+		   read ;;
     esac
 done
