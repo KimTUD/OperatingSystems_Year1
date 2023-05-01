@@ -12,7 +12,7 @@ do
     echo "6. Exit"
     echo ""
     read -p "Enter your option: " option
-    case $choice in
+    case $option in
 		1) ls ;;
 		2) df -h ;;
 		3) echo $PATH ;;
