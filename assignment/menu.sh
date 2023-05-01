@@ -29,7 +29,6 @@ do
         6)
             exit 0;;
         *)
-            echo "Invalid choice. Press Enter to try again."
-            read;;
+            echo "Invalid choice.Try again.";;
     esac
 done
