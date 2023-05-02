@@ -7,3 +7,6 @@ Lab 5
 - Command to modify the permissions of this file to give read/write permissions to the user, read
 permissions to the group and no permission to outside.
 [Screenshot](file-management/chmod-arw-File-management.png)
+
+Command to make 3 folders in heigharchy at once:
+```mkdir -p lab/sysDetails/reports```
