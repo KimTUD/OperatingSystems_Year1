@@ -1,4 +1,8 @@
 # OperatingSystems_Year1
+Lab 3
+
+- [Public Key](Lab3/PublicKey.asc)
+
 Lab 5 
 
 - Command to modify permissions of alice.txt that will give read write and execute permissions to everyone.
